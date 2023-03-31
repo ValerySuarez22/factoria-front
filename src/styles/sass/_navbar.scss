@@ -1,25 +1,23 @@
 .navbar {
-    height: 100vh;
+    height: 90vh;
     width: 160px;
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
     background-color: #E8550F;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 0px;
     box-sizing: border-box;
     overflow-y: auto;
+    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
   
-    .logo {
-      width: 100%;
-      margin: 0 auto;
-    }
-  
-    .navbar-link {
+    &-link {
       font-size: 1.2rem;
       text-decoration: none;
       color: white;
@@ -29,11 +27,18 @@
       transition: all 0.3s ease;
   
       &:hover {
-        background-color:#130B2B;
+        background-color: #130B2B;
       }
   
       &-active {
         background-color: #130B2B;
+      }
+    }
+  
+    &-logo {
+      img {
+        width: 100%;
+        margin: 0 auto;
       }
     }
   }

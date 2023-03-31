@@ -18,9 +18,7 @@ function Navbar() {
       <a href="#" className="navbar-link">
         Services
       </a>
-      <a href="#" className="navbar-link">
-        Contact
-      </a>
+      
     </nav>
   );
 }
