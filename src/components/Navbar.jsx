@@ -1,14 +1,12 @@
 import React from "react";
 import "../styles/sass/_navbar.scss";
-import Logo from '../images/image_4.png';
+import Logo from '../images/image_1.png';
 
 
 function Navbar() {
   return (
     <nav className="navbar">
-      <div className="navbar-logo">
-        <img className="logo" src={Logo} alt='logo'></img>
-      </div>
+      
       <a href="#" className="navbar-link ">
         Home
       </a>
@@ -18,6 +16,9 @@ function Navbar() {
       <a href="#" className="navbar-link">
         Services
       </a>
+      <div className="navbar-logo">
+        <img className="logo" src={Logo} alt='logo'></img>
+      </div>
       
     </nav>
   );
